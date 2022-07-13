@@ -4,8 +4,7 @@ from abc import abstractmethod
 from typing import Union
 
 import dagster._check as check
-from dagster._config import Field
-from dagster._config.source import StringSource
+from dagster._config import Field, StringSource
 from dagster.core.errors import DagsterInvariantViolationError
 from dagster.core.execution.context.input import InputContext
 from dagster.core.execution.context.output import OutputContext
