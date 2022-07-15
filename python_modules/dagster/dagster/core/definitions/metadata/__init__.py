@@ -17,9 +17,9 @@ from typing import (
 )
 
 import dagster._check as check
-import dagster.seven as seven
+import dagster._seven as _seven
 from dagster.core.errors import DagsterInvalidMetadata
-from dagster.serdes import whitelist_for_serdes
+from dagster._serdes import whitelist_for_serdes
 from dagster.utils.backcompat import (
     canonicalize_backcompat_args,
     deprecation_warning,
@@ -594,7 +594,7 @@ class JsonMetadataValue(
         data = check.opt_dict_param(data, "data", key_type=str)
         try:
             # check that the value is JSON serializable
-            seven.dumps(data)
+            _seven.dumps(data)
         except TypeError:
             raise DagsterInvalidMetadata("Value is a dictionary but is not JSON serializable.")
         return super(JsonMetadataValue, cls).__new__(cls, data)
