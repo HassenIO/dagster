@@ -5,7 +5,7 @@ from dagster import _check as check
 from dagster._config import process_config
 from dagster.core.errors import DagsterInvalidConfigError
 from dagster.core.storage.pipeline_run import PipelineRun
-from dagster.utils import merge_dicts
+from dagster._utils import merge_dicts
 
 if TYPE_CHECKING:
     from . import DockerRunLauncher

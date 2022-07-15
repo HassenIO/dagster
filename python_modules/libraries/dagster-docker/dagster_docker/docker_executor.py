@@ -19,8 +19,8 @@ from dagster.core.executor.step_delegating.step_handler.base import (
 from dagster.core.origin import PipelinePythonOrigin
 from dagster.core.utils import parse_env_var
 from dagster._serdes.utils import hash_str
-from dagster.utils import merge_dicts
-from dagster.utils.backcompat import experimental
+from dagster._utils import merge_dicts
+from dagster._utils.backcompat import experimental
 
 from .container_context import DockerContainerContext
 

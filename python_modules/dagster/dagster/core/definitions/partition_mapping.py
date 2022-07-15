@@ -3,7 +3,7 @@ from typing import Optional
 
 from dagster.core.definitions.partition import PartitionsDefinition
 from dagster.core.definitions.partition_key_range import PartitionKeyRange
-from dagster.utils.backcompat import experimental
+from dagster._utils.backcompat import experimental
 
 
 @experimental

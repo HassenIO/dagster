@@ -21,8 +21,8 @@ from dagster.core.origin import (
 )
 from dagster.core.selector import parse_solid_selection
 from dagster._serdes import pack_value, unpack_value, whitelist_for_serdes
-from dagster.utils import frozenlist, make_readonly_value
-from dagster.utils.backcompat import experimental
+from dagster._utils import frozenlist, make_readonly_value
+from dagster._utils.backcompat import experimental
 
 from .events import AssetKey
 from .pipeline_base import IPipeline

@@ -8,7 +8,7 @@ from dagster.core.definitions.definition_config_schema import (
 )
 from dagster.core.definitions.resource_definition import ResourceDefinition, is_context_provided
 from dagster.core.storage.input_manager import IInputManagerDefinition, InputManager
-from dagster.utils.backcompat import deprecation_warning, experimental
+from dagster._utils.backcompat import deprecation_warning, experimental
 
 
 class RootInputManagerDefinition(ResourceDefinition, IInputManagerDefinition):

@@ -11,7 +11,7 @@ from dagster import (
 )
 from dagster._config.field import Field
 from dagster._legacy import solid
-from dagster.utils.backcompat import experimental
+from dagster._utils.backcompat import experimental
 
 from ..utils import generate_materializations
 from .constants import (
