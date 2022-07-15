@@ -33,7 +33,7 @@ from dagster.core.definitions import (
     CompositeSolidDefinition,
     ConfigMapping,
     DagsterAssetMetadataValue,
-    DagsterPipelineRunMetadataValue,
+    DagsterRunMetadataValue,
     DagsterRunMetadataValue,
     DailyPartitionsDefinition,
     DefaultScheduleStatus,
@@ -318,6 +318,7 @@ if typing.TYPE_CHECKING:
     from dagster.core.definitions import MarkdownMetadataValue as MarkdownMetadataEntryData
     from dagster.core.definitions import MetadataEntry as EventMetadataEntry
     from dagster.core.definitions import MetadataValue as EventMetadata
+    from dagster.core.definitions import DagsterRunMetadataValue as DagsterPipelineRunMetadataValue
     from dagster.core.definitions import PathMetadataValue as PathMetadataEntryData
     from dagster.core.definitions import (
         PythonArtifactMetadataValue as PythonArtifactMetadataEntryData,
@@ -364,6 +365,7 @@ _DEPRECATED_RENAMED = {
         TableSchemaMetadataValue,
         "1.0.0",
     ),
+    "DagsterPipelineRunMetadataValue": (DagsterRunMetadataValue, "1.0.0"),
 }
 
 
@@ -406,7 +408,7 @@ __all__ = [
     "AssetSensorDefinition",
     "AssetsDefinition",
     "DagsterAssetMetadataValue",
-    "DagsterPipelineRunMetadataValue",
+    "DagsterRunMetadataValue",
     "DagsterRunMetadataValue",
     "TableColumn",
     "TableColumnConstraints",
