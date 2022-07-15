@@ -18,18 +18,22 @@ sys.meta_path.insert(
         }
     ),
 )
+
 from dagster._config import (
     Array,
+    BoolSource,
     ConfigSchema,
     Enum,
     EnumValue,
     Field,
+    IntSource,
     Map,
     Noneable,
     Permissive,
     ScalarUnion,
     Selector,
     Shape,
+    StringSource,
 )
 from dagster.builtins import Any, Bool, Float, Int, Nothing, String
 from dagster.core.definitions import (
@@ -310,8 +314,6 @@ from dagster.utils.test import (
 )
 
 from .version import __version__
-
-from dagster._config import BoolSource, StringSource, IntSource  # isort:skip
 
 # ########################
 # ##### DEPRECATED ALIASES
