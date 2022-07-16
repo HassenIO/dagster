@@ -4,6 +4,8 @@ from typing import Union
 
 import dagster._check as check
 from dagster._config import Field, StringSource
+from dagster._utils import PICKLE_PROTOCOL, mkdir_p
+from dagster._utils.backcompat import experimental
 from dagster.core.definitions.events import AssetKey, AssetMaterialization
 from dagster.core.definitions.metadata import MetadataEntry, MetadataValue
 from dagster.core.errors import DagsterInvariantViolationError
@@ -11,8 +13,6 @@ from dagster.core.execution.context.input import InputContext
 from dagster.core.execution.context.output import OutputContext
 from dagster.core.storage.io_manager import IOManager, io_manager
 from dagster.core.storage.memoizable_io_manager import MemoizableIOManager
-from dagster._utils import PICKLE_PROTOCOL, mkdir_p
-from dagster._utils.backcompat import experimental
 
 
 @io_manager(

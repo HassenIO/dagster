@@ -1,9 +1,9 @@
 from abc import ABC, abstractmethod
 from typing import Optional
 
+from dagster._utils.backcompat import experimental
 from dagster.core.definitions.partition import PartitionsDefinition
 from dagster.core.definitions.partition_key_range import PartitionKeyRange
-from dagster._utils.backcompat import experimental
 
 
 @experimental

@@ -3,10 +3,10 @@ from typing import TYPE_CHECKING, Any, Dict, List, Mapping, NamedTuple, Optional
 from dagster import Array, Field, Noneable, Shape, StringSource
 from dagster import _check as check
 from dagster._config import process_config
+from dagster._utils import merge_dicts
 from dagster.core.errors import DagsterInvalidConfigError
 from dagster.core.storage.pipeline_run import PipelineRun
 from dagster.core.utils import parse_env_var
-from dagster._utils import merge_dicts
 
 from ..secretsmanager import get_tagged_secrets
 

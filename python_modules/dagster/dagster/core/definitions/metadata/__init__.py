@@ -18,7 +18,6 @@ from typing import (
 
 import dagster._check as check
 import dagster._seven as seven
-from dagster.core.errors import DagsterInvalidMetadata
 from dagster._serdes import whitelist_for_serdes
 from dagster._utils.backcompat import (
     canonicalize_backcompat_args,
@@ -26,6 +25,7 @@ from dagster._utils.backcompat import (
     experimental,
     experimental_class_warning,
 )
+from dagster.core.errors import DagsterInvalidMetadata
 
 from .table import TableColumn, TableColumnConstraints, TableConstraints, TableRecord, TableSchema
 

@@ -4,8 +4,8 @@ from dagster_airbyte.utils import generate_materializations
 
 from dagster import AssetKey, Out, Output
 from dagster import _check as check
-from dagster.core.definitions import AssetsDefinition, multi_asset
 from dagster._utils.backcompat import experimental
+from dagster.core.definitions import AssetsDefinition, multi_asset
 
 
 @experimental
