@@ -113,14 +113,16 @@ if __name__ == "__main__":
                 "tqdm==4.48.0",  # pylint crash 48.1+
                 "yamllint",
                 "flake8>=3.7.8",
-                "astroid",  # let pylint determine the version
-                "pylint==2.13.7",
             ],
             "black": [
                 "black[jupyter]==22.3.0",
             ],
             "isort": [
                 "isort==5.10.1",
+            ],
+            "pylint": [
+                "dagster-pylint",
+                "pylint==2.13.7",
             ],
             "mypy": [
                 "mypy==0.950",
