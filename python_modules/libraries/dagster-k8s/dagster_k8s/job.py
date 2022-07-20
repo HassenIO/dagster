@@ -515,6 +515,9 @@ class DagsterK8sJobConfig(
     def with_image(self, image):
         return self._replace(job_image=image)
 
+    def with_env_vars(self, env_vars):
+        return self._replace(env_vars=env_vars)
+
     @staticmethod
     def from_dict(config=None):
         check.opt_dict_param(config, "config")
